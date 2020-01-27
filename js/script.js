@@ -109,8 +109,7 @@ $('.top-logo').click(function() {
 
 
 function scrollFunction() {
-
-  var $header = document.querySelector('header');
+  
   var $name = document.querySelector(".name");
   var $navigation = document.querySelector(".navigation");
 
