@@ -77,7 +77,7 @@ $(window).on("resize", function(e) {
 window.onscroll = function() {
 
   scrollFunction();
-  document.querySelector("header").style.filter = "none";
+  // document.querySelector("header").style.filter = "none";
   document.querySelector(".navigation").style.transition = "0.4s";
   // if ($('#myTopnav').hasClass('responsive')) {
   //   myFunction();
@@ -103,23 +103,28 @@ $(document).mouseup(function(e) {
   }
 });
 
-$('.top-logo').click(function(){
-  window.location.href=window.location.href;
+$('.top-logo').click(function() {
+  window.location.href = window.location.href;
 });
 
 
 function scrollFunction() {
+
+  var $header = document.querySelector('header');
+  var $name = document.querySelector(".name");
+  var $navigation = document.querySelector(".navigation");
+
   if (window.innerWidth > 500) {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-      $('.hamburger').addClass('special');
+      $(".hamburger").addClass('special');
       $('.hamburger-inner').addClass('special');
-      document.querySelector(".navigation").style.paddingTop = "5px";
-      document.querySelector(".navigation").style.paddingBottom = "1px";
-      document.querySelector(".navigation").style.backgroundColor = "white";
-      document.querySelector(".navigation").style.boxShadow = "0px 5px 21px -1px rgba(0, 0, 0, 0.18)";
-      document.querySelector(".name").style.fontSize = "2.2rem";
-      document.querySelector(".name").style.margin = "2px 0 0";
-      document.querySelector(".name").style.color = "black";
+      $navigation.style.paddingTop = "5px";
+      $navigation.style.paddingBottom = "1px";
+      $navigation.style.backgroundColor = "white";
+      $navigation.style.boxShadow = "0px 5px 21px -1px rgba(0, 0, 0, 0.18)";
+      $name.style.fontSize = "2.2rem";
+      $name.style.margin = "2px 0 0";
+      $name.style.color = "black";
       document.querySelector(".surname").style.color = "grey";
       $('.navLink').attr('style', 'color: black');
       $(".navLink").on("mouseover", function() {
@@ -133,15 +138,15 @@ function scrollFunction() {
 
       });
     } else {
-      $('.hamburger').removeClass('special');
+      $(".hamburger").removeClass('special');
       $('.hamburger-inner').removeClass('special');
-      document.querySelector(".navigation").style.paddingTop = "15px";
-      document.querySelector(".navigation").style.paddingBottom = "15px";
-      document.querySelector(".navigation").style.background = "transparent";
-      document.querySelector(".navigation").style.boxShadow = "none";
-      document.querySelector(".name").style.color = "white";
-      document.querySelector(".name").style.fontSize = "2.7rem";
-      document.querySelector(".name").style.margin = "-1px 0 0";
+      $navigation.style.paddingTop = "15px";
+      $navigation.style.paddingBottom = "15px";
+      $navigation.style.background = "transparent";
+      $navigation.style.boxShadow = "none";
+      $name.style.color = "white";
+      $name.style.fontSize = "2.7rem";
+      $name.style.margin = "-1px 0 0";
       document.querySelector(".surname").style.color = "white";
       $('.navLink').attr('style', 'color: white');
       $(".navLink").on("mouseover", function() {
@@ -154,18 +159,23 @@ function scrollFunction() {
         $(this).attr('style', 'color: white');
 
       });
+      if ($(".hamburger").hasClass("is-active")) {
+      document.querySelector('header').style.filter = "blur(6px)";
+      } else {
+        document.querySelector('header').style.filter = "none";
+      }
     }
   } else {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-      $('.hamburger').addClass('special');
+      $(".hamburger").addClass('special');
       $('.hamburger-inner').addClass('special');
-      document.querySelector(".navigation").style.paddingTop = "5px";
-      document.querySelector(".navigation").style.paddingBottom = "1px";
-      document.querySelector(".navigation").style.backgroundColor = "white";
-      document.querySelector(".navigation").style.boxShadow = "0px 5px 21px -1px rgba(0, 0, 0, 0.18)";
-      document.querySelector(".name").style.fontSize = "1.9rem";
-      document.querySelector(".name").style.margin = "6px 0 0";
-      document.querySelector(".name").style.color = "black";
+      $navigation.style.paddingTop = "5px";
+      $navigation.style.paddingBottom = "1px";
+      $navigation.style.backgroundColor = "white";
+      $navigation.style.boxShadow = "0px 5px 21px -1px rgba(0, 0, 0, 0.18)";
+      $name.style.fontSize = "1.9rem";
+      $name.style.margin = "6px 0 0";
+      $name.style.color = "black";
       document.querySelector(".surname").style.color = "grey";
       $('.navLink').attr('style', 'color: black');
       $(".navLink").on("mouseover", function() {
@@ -179,15 +189,15 @@ function scrollFunction() {
 
       });
     } else {
-      $('.hamburger').removeClass('special');
+      $(".hamburger").removeClass('special');
       $('.hamburger-inner').removeClass('special');
-      document.querySelector(".navigation").style.paddingTop = "15px";
-      document.querySelector(".navigation").style.paddingBottom = "15px";
-      document.querySelector(".navigation").style.background = "transparent";
-      document.querySelector(".navigation").style.boxShadow = "none";
-      document.querySelector(".name").style.color = "white";
-      document.querySelector(".name").style.fontSize = "2.1rem";
-      document.querySelector(".name").style.margin = "3px 0 0";
+      $navigation.style.paddingTop = "15px";
+      $navigation.style.paddingBottom = "15px";
+      $navigation.style.background = "transparent";
+      $navigation.style.boxShadow = "none";
+      $name.style.color = "white";
+      $name.style.fontSize = "2.1rem";
+      $name.style.margin = "3px 0 0";
       document.querySelector(".surname").style.color = "white";
       $('.navLink').attr('style', 'color: white');
       $(".navLink").on("mouseover", function() {
@@ -200,6 +210,11 @@ function scrollFunction() {
         $(this).attr('style', 'color: white');
 
       });
+      if ($(".hamburger").hasClass("is-active")) {
+        document.querySelector('header').style.filter = "blur(6px)";
+      } else {
+        document.querySelector('header').style.filter = "none";
+      }
     }
   }
 }
