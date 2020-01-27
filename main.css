@@ -71,21 +71,26 @@ a {
     margin-top: 45px;
     margin-bottom: 60px !important;
   }
+
 }
 
 @media screen and (min-width: 1301px) {
   .profile h1 {
-    font-size: 6rem;
+    font-size: 5.5rem;
   }
 
   .profile h2 {
     margin-top: 1px;
-    font-size: 4.5rem;
+    font-size: 4rem;
     line-height: 1.5;
   }
 
-  .aboutme h4, .technologies h4, .projects h4, .contact h4 {
+  .aboutme h2, .technologies h2, .projects h2, .contact h2 {
     font-size: 45px;
+  }
+
+  .technologies h3 {
+    font-size: 38px;
   }
 
   label, #sendBtn {
@@ -108,7 +113,7 @@ a {
   }
 
   .aboutme p {
-    font-size: 21px;
+    font-size: 18px;
   }
 
   .technologies {
@@ -139,7 +144,7 @@ a {
   }
 
   .technologies p {
-    font-size: 19px;
+    font-size: 18px;
   }
 
   .projects {
@@ -163,8 +168,12 @@ a {
 }
 
 @media screen and (min-width: 901px) and (max-width: 1300px) {
-  .aboutme h4, .technologies h4, .projects h4, .contact h4 {
+  .aboutme h2, .technologies h2, .projects h2, .contact h2 {
     font-size: 43px;
+  }
+
+  .technologies h3 {
+    font-size: 35px;
   }
 
   .profile h1 {
@@ -191,7 +200,7 @@ a {
   }
 
   .aboutme p {
-    font-size: 21px;
+    font-size: 18px;
   }
 
   .technologies {
@@ -248,8 +257,12 @@ a {
 }
 
 @media screen and (max-width: 900px) {
-  .aboutme h4, .technologies h4, .projects h4, .contact h4 {
+  .aboutme h2, .technologies h2, .projects h2, .contact h2 {
     font-size: 39px;
+  }
+
+  .technologies h3 {
+    font-size: 30px;
   }
 
   label, #sendBtn {
@@ -434,7 +447,7 @@ a {
   }
 
   .aboutme p {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .technologies {
@@ -503,7 +516,7 @@ a {
 
 @media screen and (min-width: 501px) {
   .topnav .navLink {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .topnav.responsive .navLink {
@@ -523,7 +536,7 @@ a {
 
 @media screen and (max-width: 500px) {
   .topnav .navLink {
-    font-size: 17px;
+    font-size: 16px;
   }
 
   .name {
@@ -718,17 +731,17 @@ header img {
   background-color: white;
 }
 
-.aboutme h4, .technologies h4, .projects h4 {
+.aboutme h2, .technologies h2, .projects h2 {
   margin-bottom: 40px;
   font-weight: 300;
 }
 
-.contact h4 {
+.contact h2 {
   margin-bottom: 60px;
   font-weight: 300;
 }
 
-.technologies h4 {
+.technologies h2, .technologies h3 {
   margin-left: 10px;
 }
 

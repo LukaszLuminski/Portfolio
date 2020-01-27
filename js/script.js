@@ -79,10 +79,10 @@ window.onscroll = function() {
   scrollFunction();
   document.querySelector("header").style.filter = "none";
   document.querySelector(".navigation").style.transition = "0.4s";
-  if ($('#myTopnav').hasClass('responsive')) {
-    myFunction();
-    $hamburger.toggleClass("is-active");
-  }
+  // if ($('#myTopnav').hasClass('responsive')) {
+  //   myFunction();
+  //   $hamburger.toggleClass("is-active");
+  // }
 
 };
 
@@ -104,7 +104,7 @@ $(document).mouseup(function(e) {
 });
 
 $('.top-logo').click(function(){
-  window.location.href=window.location.href; 
+  window.location.href=window.location.href;
 });
 
 

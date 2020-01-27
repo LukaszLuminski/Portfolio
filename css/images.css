@@ -63,7 +63,7 @@
   opacity: 0.95;
 }
 
-.grid figure figcaption {
+.grid figure article {
   display: flex;
   text-align: center;
   justify-content: center;
@@ -75,17 +75,18 @@
 }
 
 .card-content {
+  margin-top: -15px;
   align-self: center;
   padding-bottom: 40px;
 }
 
-.grid figure figcaption::before,
-.grid figure figcaption::after {
+.grid figure article::before,
+.grid figure article::after {
   pointer-events: none;
 }
 
-.grid figure figcaption,
-.grid figure figcaption>a {
+.grid figure article,
+.grid figure article>a {
   position: absolute;
   top: 0;
   left: 0;
@@ -93,7 +94,7 @@
   height: 100%;
 }
 
-.grid figure figcaption>a {
+.grid figure article>a {
   z-index: 100;
   /* text-indent: 200%; */
   /* white-space: nowrap; */
@@ -101,23 +102,27 @@
   opacity: 0;
 }
 
-.grid figure h2 {
-  word-spacing: -0.15em;
-  font-weight: 300;
+.grid figure h3 {
+  /* word-spacing: -0.15em; */
+  font-weight: 400;
 }
 
-.grid figure h2 span {
+/* .grid figure h3 span {
   font-weight: 800;
-}
+} */
 
-.grid figure h2,
+.grid figure h3,
 .grid figure p {
   margin: 0;
 }
 
 .grid figure p {
   letter-spacing: 1px;
-  font-size: 68.5%;
+  font-size: 62%;
+}
+
+.grid figure h3 {
+  font-size: 80%;
 }
 
 .links {
@@ -172,7 +177,7 @@ figure.hover-effect:hover img {
   filter: blur(3px);
 }
 
-figure.hover-effect figcaption {
+figure.hover-effect article {
   text-align: center;
 }
 
@@ -205,7 +210,7 @@ figure.hover-effect:hover h2::after {
   transform: translate3d(0, 0, 0);
 } */
 
-figure.hover-effect p {
+figure.hover-effect p, figure.hover-effect h3 {
   /* padding: 1em 0; */
   opacity: 0;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -214,7 +219,7 @@ figure.hover-effect p {
   transform: translate3d(100%, 0, 0);
 }
 
-figure.hover-effect:hover p {
+figure.hover-effect:hover p, figure.hover-effect:hover h3 {
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
