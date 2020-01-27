@@ -120,27 +120,23 @@
   letter-spacing: 1px;
 }
 
-.grid figure h3 {
-  font-size: 70%;
-}
-
 @media (max-width: 600px) {
  .grid figure p {
-   font-size: 56%;
+   font-size: 14px;
  }
 
  .grid figure h3 {
-   font-size: 70%;
+   font-size: 18px;
  }
 }
 
 @media (min-width: 601px) {
  .grid figure p {
-   font-size: 60%;
+   font-size: 16px;
  }
 
  .grid figure h3 {
-   font-size: 75%;
+   font-size: 20px;
  }
 }
 
