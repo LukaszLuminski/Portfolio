@@ -20,7 +20,7 @@ $(document).ready(function() {
 
 let resizeTimer;
 
-window.addEventListener("orientationchange", () => {
+window.addEventListener("resize", () => {
   document.body.classList.add("resize-animation-stopper");
   clearTimeout(resizeTimer);
   resizeTimer = setTimeout(() => {
@@ -59,7 +59,7 @@ window.onload = function() {
 
 };
 
-$(window).on("resize", function(e) {
+$(window).on("orientationchange", function(e) {
   scrollFunction();
   document.querySelector(".navigation").style.transition = "0s";
 
