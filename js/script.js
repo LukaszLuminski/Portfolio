@@ -72,15 +72,13 @@ $(window).resize(function() {
     $hamburger.removeClass("is-active");
 
     if (window.innerWidth < 1291) {
-      $('.right a').addClass('animated');
-    } else {
       $('.right a').removeClass('animated');
     }
     cachedWidth = newWidth;
   }
 });
 
-// 
+//
 // $(window).on("resize", function(e) {
 //   scrollFunction();
 //   document.querySelector(".navigation").style.transition = "0s";
