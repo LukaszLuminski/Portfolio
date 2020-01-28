@@ -30,17 +30,17 @@ window.addEventListener("resize", () => {
 
 var $hamburger = $(".hamburger");
 $hamburger.on("click", function() {
-
+  $('.right a').addClass('animated');
   $hamburger.toggleClass("is-active");
 
   if ((window.innerWidth < 1291) && (document.documentElement.scrollTop < 50) && ($hamburger.hasClass('is-active'))) {
-    $('.right a').addClass('animated');
+
     document.querySelector("header").style.filter = "blur(6px)";
   } else {
     document.querySelector("header").style.filter = "none";
-      $('.right a').removeClass('animated');
-  }
 
+  }
+// $('.right a').removeClass('animated');
 });
 
 if (window.innerWidth < 1291) {
@@ -132,7 +132,7 @@ $('.top-logo').click(function() {
 
 function scrollFunction() {
 
-    $('.right a').removeClass('animated');
+  $('.right a').removeClass('animated');
 
   var $name = document.querySelector(".name");
   var $navigation = document.querySelector(".navigation");
