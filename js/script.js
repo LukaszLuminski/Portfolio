@@ -67,11 +67,11 @@ $(window).on("orientationchange", function(e) {
   $('#myTopnav').removeClass('responsive');
   $hamburger.removeClass("is-active");
 
-  if (window.innerWidth < 1291) {
-    $('.right a').addClass('animated');
-  } else {
-    $('.right a').removeClass('animated');
-  }
+  // if (window.innerWidth < 1291) {
+  //   $('.right a').addClass('animated');
+  // } else {
+  //   $('.right a').removeClass('animated');
+  // }
 });
 
 window.onscroll = function() {
