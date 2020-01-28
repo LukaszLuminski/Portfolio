@@ -132,6 +132,8 @@ $('.top-logo').click(function() {
 
 function scrollFunction() {
 
+    $('.right a').removeClass('animated');
+
   var $name = document.querySelector(".name");
   var $navigation = document.querySelector(".navigation");
 
