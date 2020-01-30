@@ -36,8 +36,8 @@ a {
 }
 
 .anchor2 {
-  height: 100px;
-  margin-top: -100px;
+  height: 70px;
+  margin-top: -70px;
 }
 
 .stack {
@@ -89,9 +89,9 @@ a {
     font-size: 45px;
   }
 
-  .projects h2 {
+  /* .projects h2 {
     margin-bottom: 45px !important;
-  }
+  } */
 
   .technologies h3 {
     font-size: 38px;
@@ -467,7 +467,11 @@ a {
   }
 
   .projects {
-    padding: 40px 6% 0 6%;
+    padding: 30px 6% 0 6%;
+  }
+
+  .projects h2 {
+    margin-bottom: 30px !important;
   }
 
   .logo img {
@@ -533,8 +537,8 @@ a {
   }
 
   .anchor3 {
-    height: 55px;
-    margin-top: -55px;
+    height: 45px;
+    margin-top: -45px;
   }
 }
 
@@ -553,8 +557,8 @@ a {
   }
 
   .anchor3 {
-    height: 20px;
-    margin-top: -20px;
+    height: 0;
+    margin-top: 0;
   }
 }
 
