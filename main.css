@@ -89,6 +89,10 @@ a {
     font-size: 45px;
   }
 
+  .projects h2 {
+    margin-bottom: 45px !important;
+  }
+
   .technologies h3 {
     font-size: 38px;
   }
@@ -109,7 +113,7 @@ a {
   }
 
   .aboutme {
-    padding: 60px 34% 70px 17.1%;
+    padding: 20px 34% 30px 17.1%;
   }
 
   .aboutme p {
@@ -117,7 +121,7 @@ a {
   }
 
   .technologies {
-    padding: 150px 16% 140px 14%;
+    padding: 140px 16% 140px 14%;
     -webkit-clip-path: polygon(0 14%, 100% 0, 100% 100%, 0% 90%);
     clip-path: polygon(0 14%, 100% 0, 100% 100%, 0% 90%);
   }
@@ -148,7 +152,7 @@ a {
   }
 
   .projects {
-    padding: 30px 17% 40px 17%;
+    padding: 40px 17% 20px 17%;
   }
 
   .nodejs {
@@ -157,7 +161,7 @@ a {
   }
 
   .contact {
-    padding: 140px 17% 95px 17%;
+    padding: 130px 17% 95px 17%;
     -webkit-clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
     clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
   }
@@ -196,7 +200,7 @@ a {
   }
 
   .aboutme {
-    padding: 45px 13.5% 75px 13.5%;
+    padding: 35px 13.5% 55px 13.5%;
   }
 
   .aboutme p {
@@ -204,7 +208,7 @@ a {
   }
 
   .technologies {
-    padding: 80px 13.5% 70px 13.5%;
+    padding: 90px 13.5% 80px 13.5%;
     -webkit-clip-path: polygon(0 7%, 100% 0, 100% 100%, 0% 95%);
     clip-path: polygon(0 7%, 100% 0, 100% 100%, 0% 95%);
   }
@@ -443,7 +447,7 @@ a {
   }
 
   .aboutme {
-    padding: 35px 6% 15px 6%;
+    padding: 20px 6% 15px 6%;
   }
 
   .aboutme p {
