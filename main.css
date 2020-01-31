@@ -506,13 +506,13 @@ a {
 
 @media screen and (min-width: 768px) {
   .profile {
-    padding-bottom: 22rem;
+    padding-bottom: 8rem;
   }
 }
 
 @media screen and (min-width: 321px) and (max-width: 767px) {
   .profile {
-    padding-bottom: 20rem;
+    padding-bottom: 10rem;
   }
 }
 
