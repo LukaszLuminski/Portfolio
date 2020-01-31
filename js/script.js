@@ -43,12 +43,13 @@ $hamburger.on("click", function() {
 var setNav = function() {
 
 
-  
+  if (window.innerWidth < 1291) {
     $('.topnav .navLink').on('click', function() {
       myFunction();
       $hamburger.toggleClass("is-active");
       myFunction2();
     });
+ } 
 };
 
 // if (window.innerWidth < 1291) {
@@ -74,7 +75,6 @@ window.onload = function() {
 
 var cachedWidth = $(window).width();
 $(window).resize(function() {
-  setNav();
   let resizeTimer;
   var newWidth = $(window).width();
   if (newWidth !== cachedWidth) {
@@ -83,6 +83,7 @@ $(window).resize(function() {
     resizeTimer = setTimeout(() => {
       document.body.classList.remove("resize-animation-stopper");
     }, 400);
+    setNav();
     scrollFunction();
     document.querySelector(".navigation").style.transition = "0s";
     $('#myTopnav').removeClass('responsive');
@@ -260,7 +261,7 @@ function scrollFunction() {
 }
 
 function myFunction() {
-  if (window.innerWidth < 1291) {
+ 
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
       x.className += " responsive";
@@ -268,7 +269,7 @@ function myFunction() {
       x.className = "topnav";
     }
   }
-}
+
 
 function myFunction2() {
   var x = document.querySelector("header");
