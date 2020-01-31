@@ -43,13 +43,12 @@ $hamburger.on("click", function() {
 var setNav = function() {
 
 
-  if (window.innerWidth < 1291) {
+  
     $('.topnav .navLink').on('click', function() {
       myFunction();
       $hamburger.toggleClass("is-active");
       myFunction2();
     });
-  }
 };
 
 // if (window.innerWidth < 1291) {
