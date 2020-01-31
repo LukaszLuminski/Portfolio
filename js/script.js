@@ -1,6 +1,5 @@
 $(document).ready(function() {
   $(".scroll-down, .right a").on('click', function(event) {
-
     event.preventDefault();
 
     var full_url = this.href;
@@ -41,16 +40,30 @@ $hamburger.on("click", function() {
   // $('.right a').removeClass('animated');
 });
 
-if (window.innerWidth < 1291) {
-  $('.topnav .navLink').on('click', function() {
-    myFunction();
-    $hamburger.toggleClass("is-active");
-    myFunction2();
-  });
-}
+var setNav = function() {
+
+
+  if (window.innerWidth < 1291) {
+    $('.topnav .navLink').on('click', function() {
+      myFunction();
+      $hamburger.toggleClass("is-active");
+      myFunction2();
+    });
+  }
+};
+
+// if (window.innerWidth < 1291) {
+//   $('.topnav .navLink').on('click', function() {
+//     myFunction();
+//     $hamburger.toggleClass("is-active");
+//     myFunction2();
+//   });
+// }
 
 window.onload = function() {
+  setNav();
   scrollFunction();
+
   // if (window.innerWidth < 1291) {
   //   $('.right a').addClass('animated');
   // } else {
@@ -62,13 +75,14 @@ window.onload = function() {
 
 var cachedWidth = $(window).width();
 $(window).resize(function() {
+  setNav();
   let resizeTimer;
   var newWidth = $(window).width();
   if (newWidth !== cachedWidth) {
     document.body.classList.add("resize-animation-stopper");
     clearTimeout(resizeTimer);
     resizeTimer = setTimeout(() => {
-    document.body.classList.remove("resize-animation-stopper");
+      document.body.classList.remove("resize-animation-stopper");
     }, 400);
     scrollFunction();
     document.querySelector(".navigation").style.transition = "0s";
@@ -247,11 +261,13 @@ function scrollFunction() {
 }
 
 function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
+  if (window.innerWidth < 1291) {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
   }
 }
 

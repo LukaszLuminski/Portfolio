@@ -25,6 +25,18 @@ a {
   transition: none !important;
 }
 
+.picture2 {
+  float: left;
+}
+
+.profile-pic2 {
+  width: 143px;
+  height: auto;
+  margin: 5px 20px .5rem 0;
+  /* border-radius: 2px; */
+  box-shadow: 1px 4px 15px 5px rgba(0, 0, 0, 0.10);
+}
+
 .anchor, .anchor2 {
   display: block;
   visibility: hidden;
@@ -108,12 +120,12 @@ a {
 
   @media screen and (min-width: 1500px) {
     .aboutme {
-      padding: 20px 38% 45px 17.1%;
+      padding: 20px 38% 55px 17.1%;
     }
   }
 
   .aboutme {
-    padding: 20px 34% 45px 17.1%;
+    padding: 20px 34% 55px 17.1%;
   }
 
   .aboutme p {
@@ -200,7 +212,7 @@ a {
   }
 
   .aboutme {
-    padding: 35px 13.5% 55px 13.5%;
+    padding: 35px 13.5% 65px 13.5%;
   }
 
   .aboutme p {
@@ -427,8 +439,8 @@ a {
   }
 
   .contact {
-    -webkit-clip-path: polygon(0 4%, 100% 0, 100% 100%, 0% 100%);
-    clip-path: polygon(0 4%, 100% 0, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0 3%, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 3%, 100% 0, 100% 100%, 0% 100%);
   }
 
   .navigation {
@@ -479,7 +491,7 @@ a {
   }
 
   .contact {
-    padding: 70px 6% 65px 6%;
+    padding: 60px 6% 65px 6%;
   }
 
   .footer {
@@ -713,11 +725,11 @@ header img {
   left: 0;
   right: 0;
   bottom: 0;
-  opacity: .9;
+  opacity: .4;
   position: absolute;
   background-size: cover;
   background-position: center;
-  background-image: url('img/background.jpeg');
+  background-image: url('img/background.jpg');
 }
 
 .arrows {
@@ -789,10 +801,13 @@ header img {
 }
 
 .contact {
-  background: linear-gradient(to bottom, #156EB9, #032749);
+  position: relative;
+  background: linear-gradient(to bottom, #a59b8d, #522c14);
+  background-color: white;
   color: white;
   background-size: cover;
   background-position: center;
+  border-bottom: 1px solid black;
 }
 
 label {
@@ -808,11 +823,11 @@ label {
 
 .formField {
   border: 1px solid #ccc;
-  border-radius: 3px;
+  border-radius: 2px;
   margin: 6px 0 18px 0;
   padding: 3px 6px;
-  -webkit-box-shadow: 2px 1px 15px 5px rgba(0, 0, 0, 0.08);
-  box-shadow: 2px 1px 15px 5px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 2px 1px 15px 5px rgba(0, 0, 0, 0.05);
+  box-shadow: 2px 1px 15px 5px rgba(0, 0, 0, 0.1);
   color: black;
   background-color: hsl(0, 0%, 97%);
 }
@@ -872,7 +887,7 @@ label {
 
 #sendBtn {
   cursor: pointer;
-  background: #999999;
+  background: #666666;
   border: none;
   line-height: 32px;
   padding: 10px 25px;
@@ -897,12 +912,11 @@ label {
 }
 
 .footer {
-  background-color: #010d18;
+  background-color: #0d0d0d;
   color: #b3b3b3;
   font-size: 15px;
   display: flex;
   justify-content: space-between;
-  margin-top: -1px;
 }
 
 .return-to-top:hover {

@@ -136,7 +136,7 @@
  }
 
  .grid figure h3 {
-   font-size: 20px;
+   font-size: 23px;
  }
 }
 
@@ -147,19 +147,19 @@
   width: 100%;
   height: 55px;
   background: rgb(204, 204, 204);
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.7);
   z-index: 200;
 }
 
 .links .live {
   justify-content: flex-start;
   margin: auto 0 auto 1.1em;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .links .code {
   margin: auto 0 auto 1.4rem;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .links a:hover, .links a:active, .links a:visited {
