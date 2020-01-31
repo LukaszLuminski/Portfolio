@@ -108,12 +108,12 @@ a {
 
   @media screen and (min-width: 1500px) {
     .aboutme {
-      padding: 60px 38% 70px 17.1%;
+      padding: 20px 38% 45px 17.1%;
     }
   }
 
   .aboutme {
-    padding: 20px 34% 30px 17.1%;
+    padding: 20px 34% 45px 17.1%;
   }
 
   .aboutme p {
@@ -121,9 +121,9 @@ a {
   }
 
   .technologies {
-    padding: 140px 16% 140px 14%;
-    -webkit-clip-path: polygon(0 14%, 100% 0, 100% 100%, 0% 90%);
-    clip-path: polygon(0 14%, 100% 0, 100% 100%, 0% 90%);
+    padding: 125px 16% 140px 14%;
+    -webkit-clip-path: polygon(0 12%, 100% 0, 100% 100%, 0% 90%);
+    clip-path: polygon(0 12%, 100% 0, 100% 100%, 0% 90%);
   }
 
   .stack {
