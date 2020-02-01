@@ -64,7 +64,7 @@ window.onload = function() {
 
 };
 
-$(window).on('orientationchange', setNav);
+// $(window).on('orientationchange', setNav);
 
 
 var cachedWidth = $(window).width();
