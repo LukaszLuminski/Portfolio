@@ -1,4 +1,13 @@
 $(document).ready(function() {
+
+  $('.right a').on('click', function() {
+    if (window.innerWidth < 1291) {
+      myFunction();
+      $hamburger.toggleClass("is-active");
+      myFunction2();
+    }
+  });
+
   $(".scroll-down, .right a").on('click', function(event) {
     event.preventDefault();
 
@@ -39,14 +48,6 @@ $hamburger.on("click", function() {
   }
   // $('.right a').removeClass('animated');
 });
-
-    $('.topnav .navLink').on('click', function() {
-        if (window.innerWidth < 1291) {
-      myFunction();
-      $hamburger.toggleClass("is-active");
-      myFunction2();
-      }
-    });
 
 // if (window.innerWidth < 1291) {
 //   $('.topnav .navLink').on('click', function() {
@@ -260,13 +261,13 @@ function scrollFunction() {
 
 function myFunction() {
 
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
   }
+}
 
 
 function myFunction2() {
