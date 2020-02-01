@@ -15,15 +15,16 @@ $(document).ready(function() {
       scrollTop: target_top
     }, 1000);
 
-    if (window.innerWidth < 1291) {
-      $('.right a').on('click', function() {
-        myFunction();
-        $hamburger.toggleClass("is-active");
-        myFunction2();
-      });
-    }
     event.preventDefault();
   });
+});
+
+$('.right a').on('click', function() {
+  if (window.innerWidth < 1291) {
+    myFunction();
+    $hamburger.toggleClass("is-active");
+    myFunction2();
+  }
 });
 
 // window.addEventListener("resize", () => {
