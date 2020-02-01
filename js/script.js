@@ -1,13 +1,5 @@
 $(document).ready(function() {
 
-  $('.right a').on('click', function() {
-    if (window.innerWidth < 1291) {
-      myFunction();
-      $hamburger.toggleClass("is-active");
-      myFunction2();
-    }
-  });
-
   $(".scroll-down, .right a").on('click', function(event) {
     event.preventDefault();
 
@@ -22,6 +14,14 @@ $(document).ready(function() {
     $('html, body').animate({
       scrollTop: target_top
     }, 1000);
+
+    if (window.innerWidth < 1291) {
+      $('.right a').on('click', function() {
+        myFunction();
+        $hamburger.toggleClass("is-active");
+        myFunction2();
+      });
+    }
     event.preventDefault();
   });
 });
@@ -60,12 +60,6 @@ $hamburger.on("click", function() {
 window.onload = function() {
   // setNav();
   scrollFunction();
-
-  // if (window.innerWidth < 1291) {
-  //   $('.right a').addClass('animated');
-  // } else {
-  //   $('.right a').removeClass('animated');
-  // }
 
 };
 
