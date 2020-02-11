@@ -79,7 +79,7 @@ function scrollFunction() {
       $navigation.style.backgroundColor = "white";
       $navigation.style.boxShadow = "0px 5px 21px -1px rgba(0, 0, 0, 0.18)";
       $name.style.fontSize = "2rem";
-      $name.style.margin = "2px 0 0";
+      $name.style.margin = "1px 0 0";
       $name.style.color = "black";
       document.querySelector(".surname").style.color = "grey";
       $('.navLink').attr('style', 'color: black');
