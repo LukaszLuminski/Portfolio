@@ -543,9 +543,9 @@ a {
     font-size: 18px;
   } */
 
-  .topnav.responsive .navLink {
+  /* .topnav.responsive .navLink {
     width: 144px;
-  }
+  } */
 
   .name {
     font-size: 2.1rem;
@@ -672,7 +672,7 @@ a {
   }
 
   .first {
-    margin-top: 64px;
+    margin-top: 62px;
   }
 }
 

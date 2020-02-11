@@ -74,12 +74,12 @@ function scrollFunction() {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
       $(".hamburger").addClass('special');
       $('.hamburger-inner').addClass('special');
-      $navigation.style.paddingTop = "8px";
+      $navigation.style.paddingTop = "7px";
       $navigation.style.paddingBottom = "0";
       $navigation.style.backgroundColor = "white";
       $navigation.style.boxShadow = "0px 5px 21px -1px rgba(0, 0, 0, 0.18)";
       $name.style.fontSize = "2rem";
-      $name.style.margin = "2px 0 0";
+      $name.style.margin = "0";
       $name.style.color = "black";
       document.querySelector(".surname").style.color = "grey";
       $('.navLink').attr('style', 'color: black');
@@ -122,7 +122,7 @@ function scrollFunction() {
       $navigation.style.backgroundColor = "white";
       $navigation.style.boxShadow = "0px 5px 21px -1px rgba(0, 0, 0, 0.18)";
       $name.style.fontSize = "1.9rem";
-      $name.style.margin = "5px 0 0";
+      $name.style.margin = "2px 0 0";
       $name.style.color = "black";
       document.querySelector(".surname").style.color = "grey";
       $('.navLink').attr('style', 'color: black');
@@ -141,7 +141,7 @@ function scrollFunction() {
       $navigation.style.boxShadow = "none";
       $name.style.color = "white";
       $name.style.fontSize = "2.1rem";
-      $name.style.margin = "5px 0 0";
+      $name.style.margin = "4px 0 0";
       document.querySelector(".surname").style.color = "white";
       $('.navLink').attr('style', 'color: white');
       $(".navLink").on("mouseover", function() {
