@@ -74,8 +74,8 @@ function scrollFunction() {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
       $(".hamburger").addClass('special');
       $('.hamburger-inner').addClass('special');
-      $navigation.style.paddingTop = "7px";
-      $navigation.style.paddingBottom = "0";
+      $navigation.style.paddingTop = "6px";
+      $navigation.style.paddingBottom = "1px";
       $navigation.style.backgroundColor = "white";
       $navigation.style.boxShadow = "0px 5px 21px -1px rgba(0, 0, 0, 0.18)";
       $name.style.fontSize = "2rem";
