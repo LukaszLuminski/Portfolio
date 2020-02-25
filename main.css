@@ -167,9 +167,13 @@ a {
     padding: 40px 17% 20px 17%;
   }
 
-  .nodejs {
-    margin-left: -16%;
-    margin-right: 28%;
+  .wordpress {
+    margin-left: -19%;
+    margin-right: 8%;
+  }
+
+  .php {
+    margin-left: 26%;
   }
 
   .contact {
@@ -364,6 +368,11 @@ a {
       margin-left: -1.3%;
     }
 
+    .wordpress {
+      margin-left: -9%;
+      margin-right: -9%;
+  }
+
     .html {
       grid-column-start: col-start 1;
     }
@@ -400,6 +409,11 @@ a {
       max-width: 66%;
       margin-left: -2%;
     }
+
+    .wordpress {
+      margin-left: 3%;
+      margin-right: 5%;
+  }
 
     .html {
       grid-column-start: col-start 1;
@@ -921,6 +935,7 @@ label {
   font-size: 15px;
   display: flex;
   justify-content: space-between;
+  margin-top: -2px;
 }
 
 .return-to-top:hover {
