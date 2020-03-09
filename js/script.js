@@ -1,11 +1,13 @@
-$(document).ready(function() {
+/*jshint esversion: 6 */
+
+$(document).ready(() => {
   $(".scroll-down, .right a").on('click', function(event) {
     event.preventDefault();
-    var full_url = this.href;
-    var parts = full_url.split("#");
-    var trgt = parts[1];
-    var target_offset = $("#" + trgt).offset();
-    var target_top = target_offset.top;
+    const full_url = this.href;
+    const parts = full_url.split("#");
+    const trgt = parts[1];
+    const target_offset = $(`#${trgt}`).offset();
+    const target_top = target_offset.top;
     $('html, body').animate({
       scrollTop: target_top
     }, 1000);
@@ -13,7 +15,7 @@ $(document).ready(function() {
   });
 });
 
-$('.right a').on('click', function() {
+$('.right a').on('click', () => {
   if (window.innerWidth < 1291) {
     myFunction();
     $hamburger.toggleClass("is-active");
@@ -22,7 +24,7 @@ $('.right a').on('click', function() {
 });
 
 var $hamburger = $(".hamburger");
-$hamburger.on("click", function() {
+$hamburger.on("click", () => {
   $('.right a').addClass('animated');
   $hamburger.toggleClass("is-active");
 
@@ -33,14 +35,14 @@ $hamburger.on("click", function() {
   }
 });
 
-window.onload = function() {
+window.onload = () => {
   scrollFunction();
 };
 
-var cachedWidth = $(window).width();
-$(window).resize(function() {
+let cachedWidth = $(window).width();
+$(window).resize(() => {
   let resizeTimer;
-  var newWidth = $(window).width();
+  const newWidth = $(window).width();
   if (newWidth !== cachedWidth) {
     document.body.classList.add("resize-animation-stopper");
     clearTimeout(resizeTimer);
@@ -56,19 +58,19 @@ $(window).resize(function() {
   }
 });
 
-window.onscroll = function() {
+window.onscroll = () => {
   scrollFunction();
   document.querySelector(".navigation").style.transition = "0.4s";
 };
 
-$('.top-logo').click(function() {
+$('.top-logo').click(() => {
   window.location.href = window.location.href;
 });
 
 function scrollFunction() {
   $('.right a').removeClass('animated');
-  var $name = document.querySelector(".name");
-  var $navigation = document.querySelector(".navigation");
+  const $name = document.querySelector(".name");
+  const $navigation = document.querySelector(".navigation");
 
   if (window.innerWidth > 500) {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
@@ -160,7 +162,7 @@ function scrollFunction() {
 }
 
 function myFunction() {
-  var x = document.getElementById("myTopnav");
+  const x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
     x.className += " responsive";
   } else {
@@ -170,8 +172,8 @@ function myFunction() {
 
 
 function myFunction2() {
-  var x = document.querySelector("header");
-  if (x.style.filter = "blur(6px)") {
+  const x = document.querySelector("header");
+  if (x.style.filter === "blur(6px)") {
     x.style.filter = "none";
   } else {
     x.style.filter = "blur(6px)";
@@ -180,7 +182,7 @@ function myFunction2() {
 
 $(".copyright").text(new Date().getFullYear());
 
-$(".return-to-top").on('click', function() {
+$(".return-to-top").on('click', () => {
   $('html, body').animate({
     scrollTop: $("body").offset().top
   }, 1000);
