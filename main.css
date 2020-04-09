@@ -406,8 +406,8 @@ a {
 
     .logo-flex2 {
       justify-content: space-around;
-      max-width: 68%;
-      margin-left: -1.4%;
+      max-width: 66%;
+      margin-left: -1%;
     }
 
     .wordpress {
@@ -824,7 +824,7 @@ header img {
 @media screen and (max-width: 499px){
  .logo-flex {
    margin-left: -27px;
-   margin-right: -7%;
+   margin-right: -5.5%;
  }
 }
 
