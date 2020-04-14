@@ -734,12 +734,6 @@ header img {
   font-weight: 400;
 }
 
-/* @media (hover: none) {
-  .bg {
-    background-attachment: initial;
-  }
-} */
-
 @media (hover: hover) {
   .bg {
     background-attachment: fixed;

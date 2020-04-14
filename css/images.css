@@ -1,6 +1,5 @@
 .grid {
   padding: .7em 0 4em;
-  /* margin: 1px auto; */
   list-style: none;
   text-align: center;
   flex-wrap: wrap;
@@ -9,11 +8,8 @@
 }
 
 .grid figure {
-  /* width: 100%; */
   position: relative;
   overflow: hidden;
-  /* margin: .55rem .7rem; */
-  /* max-height: 390px; */
   text-align: center;
   cursor: pointer;
   background-color: black;
@@ -96,20 +92,13 @@
 
 .grid figure article>a {
   z-index: 100;
-  /* text-indent: 200%; */
-  /* white-space: nowrap; */
   font-size: 0;
   opacity: 0;
 }
 
 .grid figure h3 {
-  /* word-spacing: -0.15em; */
   font-weight: 400;
 }
-
-/* .grid figure h3 span {
-  font-weight: 800;
-} */
 
 .grid figure h3,
 .grid figure p {
@@ -168,10 +157,6 @@
   text-shadow: 0 0 10px #FFFFFF;
 }
 
-figure.hover-effect {
-  /* background: #42b078; */
-}
-
 figure.hover-effect img {
   max-width: none;
   max-height: none;
@@ -185,7 +170,7 @@ figure.hover-effect img {
   backface-visibility: hidden;
 }
 
-figure.hover-effect:hover img {
+figure.hover-effect:hover img, figure.hover-effect:active img {
   opacity: 0.4;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
@@ -205,33 +190,7 @@ figure.hover-effect h3 {
 margin: 0 0 1.6rem 0;
 }
 
-/* figure.hover-effect h2 {
-  position: relative;
-  overflow: hidden;
-  padding: 0.5em 0;
-}
-
-figure.hover-effect h2::after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background: #fff;
-  content: '';
-  -webkit-transition: -webkit-transform 0.35s;
-  transition: transform 0.35s;
-  -webkit-transform: translate3d(-100%, 0, 0);
-  transform: translate3d(-100%, 0, 0);
-}
-
-figure.hover-effect:hover h2::after {
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-} */
-
 figure.hover-effect p, figure.hover-effect h3 {
-  /* padding: 1em 0; */
   opacity: 0;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
@@ -239,25 +198,12 @@ figure.hover-effect p, figure.hover-effect h3 {
   transform: translate3d(100%, 0, 0);
 }
 
-figure.hover-effect:hover p, figure.hover-effect:hover h3 {
+figure.hover-effect:hover p, figure.hover-effect:hover h3, figure.hover-effect:active p, figure.hover-effect:active h3 {
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 
-/* @media screen and (max-width: 500px) {
-
-  .content {
-		padding: 0 10px;
-		text-align: center;
-	}
-  .grid figure {
-    display: inline-block;
-    float: none;
-    margin: 10px auto;
-    width: 100%;
-  }
-} */
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
