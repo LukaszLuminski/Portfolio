@@ -66,13 +66,11 @@ a {
   max-height: 500px;
   margin-bottom: 21px;
 }
-
 @media screen and (min-width: 1680px) {
   .stack {
     width: 54%;
   }
 }
-
 @media screen and (min-width: 901px) {
   .aboutme {
     margin-bottom: -70px;
@@ -82,7 +80,6 @@ a {
     margin-bottom: 65px !important;
   }
 }
-
 @media screen and (min-width: 1301px) {
   .profile {
     h1 {
@@ -137,6 +134,7 @@ a {
     padding: 125px 15.8% 120px 20px;
     -webkit-clip-path: polygon(0 12%, 100% 0, 100% 100%, 0% 90%);
     clip-path: polygon(0 12%, 100% 0, 100% 100%, 0% 90%);
+
     h2,
     h3 {
       margin-left: -5px;
@@ -176,7 +174,6 @@ a {
   display: grid;
   text-align: center;
 }
-
 @media screen and (min-width: 681px) {
   .logo-flex {
     grid-template-columns: repeat(6, auto[col-start]);
@@ -238,13 +235,10 @@ a {
     grid-row-start: row-start 2;
   }
 }
-
 @media screen and (max-width: 680px) {
   .logo-flex {
-    align-items: center;
     grid-template-columns: repeat(3, auto[col-start]);
     grid-template-rows: repeat(4, auto [row-start]);
-    padding-left: 6%;
   }
 
   .html {
@@ -302,11 +296,11 @@ a {
     grid-row-start: row-start 4;
   }
 
-  .html, .rwd, .jquery {
-    margin-left: 15%;
+
+  .rwd, .jquery, .wp {
+    margin-left: 9%;
   }
 }
-
 @media screen and (min-width: 901px) and (max-width: 1300px) {
   .aboutme,
   .contact,
@@ -368,7 +362,8 @@ a {
       font-size: 17px;
     }
 
-    h2, h3 {
+    h2,
+    h3 {
       margin-left: 8%;
     }
   }
@@ -376,6 +371,7 @@ a {
   .logo {
     height: 70px;
     width: 9rem;
+
     img {
       height: 50px;
     }
@@ -406,7 +402,7 @@ a {
   }
 
   .technologies h3 {
-      font-size: 30px;
+    font-size: 30px;
   }
 
   #sendBtn,
@@ -482,12 +478,16 @@ a {
   }
 
   .logo-flex {
-    margin-left: -16%;
-    margin-right: -2%;
+    margin-left: -14%;
+    margin-right: -3%;
   }
 
   .wp {
-    margin-left: 16px;
+    margin-left: 8%;
+  }
+
+  .html {
+    margin-left: 10%;
   }
 
   .projects {
@@ -552,6 +552,15 @@ a {
   }
 }
 @media screen and (max-width: 500px) {
+.logo-flex {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+.git {
+  margin-right: 33%;
+}
+
   .name {
     font-size: 2.1rem;
     margin: 5px 0 0;
@@ -565,6 +574,19 @@ a {
     height: 0;
     margin-top: 0;
   }
+
+  .wp {
+    margin-left: 10%;
+  }
+
+  .stack {
+    width: 85vw;
+  }
+
+.technologies {
+  padding: 70px 5% 60px 6%;
+}
+
 }
 
 .navigation {
@@ -766,7 +788,6 @@ header img {
   font-weight: 300;
 }
 
-
 .bio {
   margin-bottom: 50px;
 }
@@ -786,7 +807,7 @@ header img {
 
   &:hover {
     cursor: pointer;
-    transform: scale(1.05);
+    transform: scale(1.08);
   }
 }
 
