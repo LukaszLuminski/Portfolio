@@ -19,7 +19,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 26px; }
+    width: 18px; }
 
 .arrow-first {
   animation: arrow-movement 2s ease-in-out infinite; }

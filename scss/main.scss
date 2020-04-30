@@ -1,4 +1,3 @@
-
 body {
   font-family: 'Lato', sans-serif;
   max-width: 100vw;
@@ -26,6 +25,75 @@ a {
 .resize-animation-stopper * {
   animation: none !important;
   transition: none !important;
+}
+
+.m-content {
+  display: none;
+
+  .small-flex {
+    display: flex;
+    flex-wrap: nowrap;
+
+    .html {
+      margin-left: 0;
+    }
+
+    .left {
+      flex: 30%;
+      max-width: 30%;
+      padding: 20px;
+
+      img {
+        height: 100px;
+        max-height: 100px;
+      }
+    }
+
+    .right {
+      flex: 70%;
+      max-width: 70%;
+      padding: 20px;
+    }
+  }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.6);
+  align-items: center;
+}
+
+
+.modal-card {
+  background-color: #d9d9d9;
+box-shadow: 1px 4px 15px 5px rgba(0, 0, 0, 0.10);
+  border: 1px solid #888;
+  margin: 0 auto;
+  width: auto;
+  border-radius: 5px;
+  align-self: center;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:focus,
+.close:hover {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .picture2 {
@@ -75,6 +143,15 @@ a {
   margin-bottom: 21px;
 }
 
+.logo {
+  transition: 0.2s;
+
+  &:hover {
+    transform: scale(1.08);
+    cursor: pointer;
+  }
+}
+
 .logo-flex,
 .logo-flex2 {
   text-align: center;
@@ -106,7 +183,7 @@ a {
 
     h2 {
       margin-top: 1px;
-      font-size: 3.3rem;
+      font-size: 3.42rem;
       line-height: 1.5;
     }
   }
@@ -346,7 +423,7 @@ a {
 
     h2 {
       margin-top: 1px;
-      font-size: 2.4rem;
+      font-size: 2.48rem;
       line-height: 1.5;
     }
   }
@@ -664,7 +741,6 @@ header img {
     text-align: center;
   }
 }
-
 @media screen and (min-width: 1301px) {
   .logo-flex,
   .logo-flex2 {

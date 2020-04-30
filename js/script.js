@@ -68,6 +68,7 @@ $('.top-logo').click(() => {
 });
 
 function scrollFunction() {
+  $('.modal').removeClass('animated');
   $('.right a').removeClass('animated');
   const $name = document.querySelector(".name");
   const $navigation = document.querySelector(".navigation");
@@ -187,4 +188,53 @@ $(".return-to-top").on('click', () => {
     scrollTop: $("body").offset().top
   }, 1000);
   preventDefault();
+});
+
+const modal = $("#myModal");
+const logo = $(".logo");
+const span = $(".close");
+
+let modalContent = $('.m-content');
+
+let modalContent1 = $('.modal-html');
+let modalContent2 = $('.modal-css');
+let modalContent3 = $('.modal-js');
+let modalContent4 = $('.modal-rwd');
+let modalContent5 = $('.modal-node');
+let modalContent6 = $('.modal-mongodb');
+let modalContent7 = $('.modal-wordpress');
+let modalContent8 = $('.modal-sass');
+let modalContent9 = $('.modal-bootstrap');
+let modalContent10 = $('modal-jquery');
+let modalContent11 = $('.modal-git');
+
+
+logo.on('click', (e) => {
+  modal.css('display', 'flex');
+  modal.addClass('animated');
+  let target = e.currentTarget;
+  let result = target.className;
+  if (result == 'logo html') {
+    modalContent1.css('display', 'flex');
+  } else if (result == 'logo css'){
+    modalContent2.css('display', 'flex');
+  } else if (result == 'logo js'){
+    modalContent3.css('display', 'flex');
+  }
+});
+
+span.on('click', () => {
+  modal.removeClass('animated');
+  modal.fadeOut('fast', () => {
+    modal.css('display', 'none');
+    modalContent.css('display', 'none');
+  });
+});
+
+$(window).on('click', (e) => {
+  if ($(e.target).hasClass('modal')) {
+    modal.removeClass('animated');
+    modal.css('display', 'none');
+    modalContent.css('display', 'none');
+  }
 });
