@@ -90,6 +90,10 @@ a {
   margin-left: -3%;
   margin-right: -3%; }
 
+@media screen and (min-width: 681px) {
+  .html {
+    margin-left: 12px; } }
+
 @media screen and (min-width: 900px) {
   .aboutme {
     margin-bottom: -70px; }
@@ -267,7 +271,7 @@ a {
     .aboutme p {
       font-size: 14.5px; }
   .technologies {
-    padding: 70px 6% 60px; }
+    padding: 70px 7% 60px; }
     .technologies p {
       font-size: 15px; }
   .stack {
@@ -501,9 +505,6 @@ header img {
     min-height: 80px;
     min-width: 8rem;
     margin-bottom: 35px; } }
-
-.html {
-  margin-left: 12px; }
 
 .contact {
   position: relative;
