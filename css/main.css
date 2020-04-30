@@ -248,7 +248,7 @@ a {
     .aboutme p {
       font-size: 14.5px; }
   .technologies {
-    padding: 70px 6% 60px; }
+    padding: 70px 7% 60px; }
     .technologies p {
       font-size: 15px; }
   .stack {
@@ -481,10 +481,11 @@ header img {
   .logo {
     min-height: 80px;
     min-width: 8rem;
-    margin-bottom: 35px; } }
+    margin-bottom: 35px; }
+    .html {
+      margin-left: 12px; } }
 
-.html {
-  margin-left: 12px; }
+
 
 .contact {
   position: relative;
