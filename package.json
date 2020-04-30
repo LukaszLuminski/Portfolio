@@ -4,12 +4,14 @@
   "description": "Personal portfolio website",
   "main": "script.js",
   "dependencies": {
-    "browser-sync": "^2.26.7"
+    "browser-sync": "^2.26.7",
+    "node-sass": "^4.14.0"
   },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "ui": "browser-sync start --proxy=localhost:8888 --files='**/*.css, **/*.js' --ignore=node_modules --reload-delay 10 --no-ui --no-notify"
+    "ui": "browser-sync start --proxy=localhost:8888 --files='**/*.css, **/*.js' --ignore=node_modules --reload-delay 10 --no-ui --no-notify",
+    "scss": "node-sass --watch scss -o css"
   },
   "repository": {
     "type": "git",

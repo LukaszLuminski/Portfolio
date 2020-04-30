@@ -25,7 +25,7 @@
   <link rel="stylesheet" type="text/css" href="css/hamburger.css">
   <link rel="stylesheet" type="text/css" href="css/images.css">
   <link rel="stylesheet" type="text/css" href="css/arrows.css">
-  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400&display=swap" rel="stylesheet">
 
 </head>
@@ -171,7 +171,7 @@
 
   <div class="technologies">
     <div id="technologies" class="anchor2"></div>
-    <div class="stack">
+      <div class="stack">
       <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" data-aos-anchor=".technologies">
         <h2 class="tools">My skills</h2>
       </div>
@@ -190,6 +190,26 @@
             <img src="img/js-logo.png" alt="JavaScript logo">
             <p>JavaScript</p>
           </div>
+          <div class="logo rwd">
+            <img src="img/rwd-logo.png" alt="rwd logo">
+            <p>RWD</p>
+          </div>
+          <div class="logo node">
+            <img src="img/nodejs-logo.png" alt="MongoDB logo">
+            <p>Node.js</p>
+          </div>
+          <div class="logo mongodb">
+            <img src="img/mongodb-logo.png" alt="MongoDB logo">
+            <p>MongoDB</p>
+          </div>
+          <div class="logo wp">
+            <img src="img/wordpress-logo.png" alt="wordpress logo">
+            <p>WordPress</p>
+          </div>
+          <div class="logo sass">
+            <img src="img/sass-logo.png" alt="sass logo">
+            <p>Sass</p>
+          </div>
           <div class="logo bootstrap">
             <img src="img/bootstrap-logo.png" alt="Bootstrap logo">
             <p>Bootstrap</p>
@@ -204,21 +224,7 @@
           </div>
         </div>
       </div>
-      <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
-        <h3 class="learning">What I am learning</h3>
-      </div>
-      <div data-aos="flip-up" data-aos-duration="1000" data-aos-delay="200" data-aos-once="true" class="logo-flex2" data-aos-anchor=".learning">
-
-        <div class="logo wordpress">
-          <img src="img/wordpress-logo.png" alt="Wordpress logo">
-          <p>WordPress</p>
-        </div>
-        <div class="logo php">
-          <img src="img/php-logo.png" alt="php logo">
-          <p>PHP</p>
-        </div>
-      </div>
-    </div>
+     </div>
   </div>
 
   <div id="aboutme" class="anchor"></div>
@@ -253,7 +259,9 @@
     <form action="https://formspree.io/mayezekb" method="POST" id="contact_form">
 
       <div class="left">
-        <div><label for="email">Email</label></div>
+        <div><label for="your-name">Your name</label></div>
+        <div><input type="text" name="-name" class="formField your-name" required /></div>
+        <div><label for="email">Your email</label></div>
         <div><input type="email" name="-replyto" class="formField email" required /></div>
         <div><label for="subject">Subject</label></div>
         <div><input type="text" name="-subject" id="subject" class="formField subject" required /></div>

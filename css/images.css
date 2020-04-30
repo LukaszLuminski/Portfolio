@@ -1,133 +1,94 @@
 .grid {
-  padding: .7em 0 4em;
+  padding: 0.7em 0 4em;
   list-style: none;
   text-align: center;
   flex-wrap: wrap;
   display: flex;
-  justify-content: space-between;
-}
-
-.grid figure {
-  position: relative;
-  overflow: hidden;
-  text-align: center;
-  cursor: pointer;
-  background-color: black;
-  -webkit-box-shadow: 2px 1px 15px 5px rgba(0, 0, 0, 0.29);
-  box-shadow: 2px 1px 15px 5px rgba(0, 0, 0, 0.29);
-}
+  justify-content: space-between; }
+  .grid figure {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+    background-color: black;
+    -webkit-box-shadow: 2px 1px 15px 5px rgba(0, 0, 0, 0.29);
+    box-shadow: 2px 1px 15px 5px rgba(0, 0, 0, 0.29); }
+    .grid figure p {
+      letter-spacing: 1px; }
+    .grid figure h3 {
+      font-weight: 400; }
+    .grid figure h3,
+    .grid figure p {
+      margin: 0; }
+    .grid figure img {
+      position: relative;
+      display: block;
+      min-height: 100%;
+      min-width: 100%;
+      opacity: 0.95; }
+    .grid figure article > a {
+      z-index: 100;
+      font-size: 0;
+      opacity: 0; }
+    .grid figure article,
+    .grid figure article > a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+    .grid figure article {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      padding: 1em;
+      color: #fff;
+      font-size: 1.8em;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden; }
+      .grid figure article:after, .grid figure article:before {
+        pointer-events: none; }
 
 @media screen and (min-width: 1400px) {
   .column {
     flex: 33%;
-    max-width: 33%;
-  }
-}
+    max-width: 33%; } }
 
 @media screen and (min-width: 750px) and (max-width: 1399px) {
   .column {
     flex: 50%;
-    max-width: 50%;
-  }
-}
+    max-width: 50%; } }
 
 @media (min-width: 750px) {
   .grid figure {
-    margin: .55rem .7rem;
-  }
-}
+    margin: 0.55rem 0.7rem; } }
 
 @media (max-width: 749px) {
   .column {
     flex: 100%;
     max-width: 100%;
-    margin: 1rem 0;
-  }
-
+    margin: 1rem 0; }
   .grid figure {
     display: inline-block;
     float: none;
-    height: 98%;
-  }
-}
-
-.grid figure img {
-  position: relative;
-  display: block;
-  min-height: 100%;
-  min-width: 100%;
-  opacity: 0.95;
-}
-
-.grid figure article {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  padding: 1em;
-  color: #fff;
-  font-size: 1.8em;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
+    height: 98%; } }
 
 .card-content {
   margin-top: -15px;
   align-self: center;
-  padding-bottom: 40px;
-}
-
-.grid figure article::before,
-.grid figure article::after {
-  pointer-events: none;
-}
-
-.grid figure article,
-.grid figure article>a {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.grid figure article>a {
-  z-index: 100;
-  font-size: 0;
-  opacity: 0;
-}
-
-.grid figure h3 {
-  font-weight: 400;
-}
-
-.grid figure h3,
-.grid figure p {
-  margin: 0;
-}
-
-.grid figure p {
-  letter-spacing: 1px;
-}
+  padding-bottom: 40px; }
 
 @media (max-width: 600px) {
- .grid figure p {
-   font-size: 14px;
- }
-
- .grid figure h3 {
-   font-size: 18px;
- }
-}
+  .grid figure p {
+    font-size: 14px; }
+  .grid figure h3 {
+    font-size: 18px; } }
 
 @media (min-width: 601px) {
- .grid figure p {
-   font-size: 16px;
- }
-
- .grid figure h3 {
-   font-size: 23px;
- }
-}
+  .grid figure p {
+    font-size: 16px; }
+  .grid figure h3 {
+    font-size: 23px; } }
 
 .links {
   position: absolute;
@@ -135,27 +96,20 @@
   bottom: 0;
   width: 100%;
   height: 55px;
-  background: rgb(204, 204, 204);
+  background: #cccccc;
   background: rgba(0, 0, 0, 0.7);
-  z-index: 200;
-}
-
-.links .live {
-  justify-content: flex-start;
-  margin: auto 0 auto 1.1em;
-  font-size: 15px;
-}
-
-.links .code {
-  margin: auto 0 auto 1.4rem;
-  font-size: 15px;
-}
-
-.links a:hover, .links a:active, .links a:visited {
-  text-decoration: none;
-  color: #FFFFFF;
-  text-shadow: 0 0 10px #FFFFFF;
-}
+  z-index: 200; }
+  .links .live {
+    justify-content: flex-start;
+    margin: auto 0 auto 1.1em;
+    font-size: 15px; }
+  .links .code {
+    margin: auto 0 auto 1.4rem;
+    font-size: 15px; }
+  .links a:active, .links a:hover, .links a:visited {
+    text-decoration: none;
+    color: #FFFFFF;
+    text-shadow: 0 0 10px #FFFFFF; }
 
 figure.hover-effect img {
   max-width: none;
@@ -167,8 +121,7 @@ figure.hover-effect img {
   -webkit-transform: translate3d(-10px, 0, 0);
   transform: translate3d(-10px, 0, 0);
   -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
+  backface-visibility: hidden; }
 
 figure.hover-effect:hover img {
   opacity: 0.4;
@@ -179,41 +132,38 @@ figure.hover-effect:hover img {
   -moz-filter: blur(3px);
   -o-filter: blur(3px);
   -ms-filter: blur(3px);
-  filter: blur(3px);
-}
+  filter: blur(3px); }
+
+figure.hover-effect:hover h3,
+figure.hover-effect:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
 
 figure.hover-effect article {
-  text-align: center;
-}
+  text-align: center; }
 
 figure.hover-effect h3 {
-margin: 0 0 1.6rem 0;
-}
+  margin: 0 0 1.6rem; }
 
-figure.hover-effect p, figure.hover-effect h3 {
+figure.hover-effect h3,
+figure.hover-effect p {
   opacity: 0;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
   -webkit-transform: translate3d(100%, 0, 0);
-  transform: translate3d(100%, 0, 0);
-}
+  transform: translate3d(100%, 0, 0); }
 
-figure.hover-effect:hover p, figure.hover-effect:hover h3 {
-  opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-
-*, *:after, *:before {
+*,
+*:after,
+*:before {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
-.clearfix:before, .clearfix:after {
+.clearfix:after,
+.clearfix:before {
   display: table;
-  content: '';
-}
+  content: ''; }
 
 .clearfix:after {
-  clear: both;
-}
+  clear: both; }
