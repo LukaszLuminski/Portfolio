@@ -51,7 +51,11 @@ a {
   margin-top: -70px;
 }
 
-.email, .subject {
+.stack {
+  display: grid;
+}
+
+.your-name, .email, .subject {
   width: 95%;
   height: 40px;
 }
@@ -65,6 +69,24 @@ a {
   margin-bottom: 21px;
 }
 
+/* .logo {
+  transition: .4s;
+}
+
+.logo:hover {
+  transform: scale(1.06);
+  cursor: pointer;
+} */
+
+.logo-flex, .logo-flex2 {
+  text-align: center;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  margin-left: -3%;
+  margin-right: -3%;
+}
+
 @media screen and (min-width: 900px) {
   .aboutme {
     margin-bottom: -70px;
@@ -72,6 +94,11 @@ a {
 
   .tools {
     margin-bottom: 65px !important;
+  }
+
+  .learning {
+    margin-top: 45px;
+    margin-bottom: 60px !important;
   }
 }
 
@@ -118,14 +145,18 @@ a {
   }
 
   .technologies {
-    padding: 125px 16% 140px 14%;
+    padding: 125px 17% 140px 14%;
     -webkit-clip-path: polygon(0 12%, 100% 0, 100% 100%, 0% 90%);
     clip-path: polygon(0 12%, 100% 0, 100% 100%, 0% 90%);
   }
 
+  .stack {
+    justify-content: flex-end;
+  }
+
   .logo {
     height: 80px;
-    width: 10rem;
+    width: 105px;
     margin: 0 15px;
   }
 
@@ -198,8 +229,8 @@ a {
     font-size: 17px;
   }
 
-  .logo-flex {
-     display: grid;
+  .stack {
+    margin-left: -2%;
   }
 
   .logo {
@@ -244,6 +275,11 @@ a {
     .tools {
       margin-bottom: 45px !important;
     }
+
+    .learning {
+      margin-top: 18px;
+      margin-bottom: 40px !important;
+    }
   }
 
   @media screen and (min-width: 560px) and (max-width: 680px) {
@@ -260,7 +296,6 @@ a {
       width: 12.5rem;
       margin: 0 3px;
     }
-
   }
 
   @media screen and (max-width: 429px) and (min-width: 330px) {
@@ -276,6 +311,12 @@ a {
       height: 60px;
       width: 7.5rem;
       margin: 0 3px;
+    }
+  }
+
+  @media screen and (max-width: 680px) {
+    .logo {
+      margin-bottom: 50px;
     }
   }
 
@@ -319,10 +360,10 @@ a {
   .technologies p {
     font-size: 15px;
   }
-/*
+
   .stack {
     margin-left: -2%;
-  } */
+  }
 
   .projects {
     padding: 30px 6% 0 6%;
@@ -385,13 +426,6 @@ a {
 }
 
 @media screen and (min-width: 501px) {
-
-   /* .topnav .navLink {
-    font-size: 18px;
-  }
- .topnav.responsive .navLink {
-    width: 144px;
-  } */
   .name {
     font-size: 2.3rem;
     margin: 1px 0 0;
@@ -404,10 +438,6 @@ a {
 }
 
 @media screen and (max-width: 500px) {
-
-  /* .topnav .navLink {
-    font-size: 16px;
-  } */
   .name {
     font-size: 2.1rem;
     margin: 5px 0 0;
@@ -507,7 +537,6 @@ a {
   .topnav.responsive .navLink {
     float: none;
     display: block;
-    /* width: 125px; */
     text-align: left;
     line-height: 1.2;
   }
@@ -584,7 +613,7 @@ header img {
   position: absolute;
   background-size: cover;
   background-position: center;
-  background-image: url('img/background.jpg');
+  background-image: url('../img/background.jpg');
 }
 
 .arrows {
@@ -628,11 +657,6 @@ header img {
   margin-bottom: 50px;
 }
 
-.logo {
-  display: inline-block;
-  margin-bottom: 35px;
-  /* padding: 30px 15px 30px; */
-}
 
 .logo img {
   margin-bottom: 10px;
@@ -642,26 +666,29 @@ header img {
   text-align: center;
 }
 
-.logo-flex {
-  text-align: center;
-}
-
 @media screen and (min-width: 1301px) {
-  .logo-flex {
+  .logo-flex, .logo-flex2 {
     margin-left: -10px;
   }
-}
 
-@media screen and (max-width: 1300px) and (min-width: 500px) {
-  .logo-flex {
-    margin-left: -25px;
+  .logo {
+    margin-bottom: 60px;
   }
 }
 
-@media screen and (max-width: 499px) {
-  .logo-flex {
-    margin-left: -27px;
-    margin-right: -4.5%;
+@media screen and (max-width: 1300px) and (min-width: 681px) {
+  .logo-flex, .logo-flex2 {
+    margin-left: -25px;
+  }
+
+  .wp {
+    margin-left: 1.7%;
+  }
+
+  .logo {
+    min-height: 80px;
+    min-width: 8rem;
+    margin-bottom: 35px;
   }
 }
 
@@ -692,7 +719,7 @@ label {
 
 .formField {
   border: 1px solid #ccc;
-  border-radius: 3px;
+  border-radius: 2px;
   margin: 6px 0 18px 0;
   padding: 3px 6px;
   -webkit-box-shadow: 2px 1px 15px 5px rgba(0, 0, 0, 0.05);
@@ -701,7 +728,7 @@ label {
   background-color: hsl(0, 0%, 97%);
 }
 
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 1000px) {
   .left {
     flex: 100%;
     max-width: 100%;
@@ -712,7 +739,7 @@ label {
     max-width: 100%;
   }
 
-  .name, .email, .subject {
+  .your-name, .email, .subject {
     width: 100%;
     height: 35px;
   }
@@ -727,7 +754,7 @@ label {
   }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1001px) {
   .left {
     flex: 45%;
     max-width: 50%;
@@ -739,7 +766,7 @@ label {
     margin-right: -20px;
   }
 
-  .name, .email, .subject {
+  .your-name, .email, .subject {
     width: 95%;
     height: 40px;
     margin-bottom: 25px;
