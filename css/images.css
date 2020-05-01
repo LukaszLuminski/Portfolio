@@ -49,19 +49,14 @@
       .grid figure article:after, .grid figure article:before {
         pointer-events: none; }
 
-@media screen and (min-width: 1400px) {
-  .column {
-    flex: 33%;
-    max-width: 33%; } }
-
-@media screen and (min-width: 750px) and (max-width: 1399px) {
+@media screen and (min-width: 750px) {
   .column {
     flex: 50%;
     max-width: 50%; } }
 
 @media (min-width: 750px) {
   .grid figure {
-    margin: 0.55rem 0.7rem; } }
+    margin: 0.55rem 0.6rem; } }
 
 @media (max-width: 749px) {
   .column {
