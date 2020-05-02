@@ -33,10 +33,14 @@ a {
     .m-content .small-flex .left {
       flex: 30%;
       max-width: 30%;
-      padding: 20px; }
+      padding: 20px;
+      height: 400px; }
+      .m-content .small-flex .left .img-center {
+        align-self: center; }
       .m-content .small-flex .left img {
         height: 100px;
-        max-height: 100px; }
+        max-height: 100px;
+        margin: auto 0; }
     .m-content .small-flex .right {
       flex: 70%;
       max-width: 70%;
@@ -56,11 +60,12 @@ a {
   align-items: center; }
 
 .modal-card {
-  background-color: #d9d9d9;
+  background-color: #e6e6e6;
   box-shadow: 1px 4px 15px 5px rgba(0, 0, 0, 0.1);
   border: 1px solid #888;
   margin: 0 auto;
   width: auto;
+  max-width: 500px;
   border-radius: 5px;
   align-self: center; }
 

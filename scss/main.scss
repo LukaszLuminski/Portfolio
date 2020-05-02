@@ -42,10 +42,16 @@ a {
       flex: 30%;
       max-width: 30%;
       padding: 20px;
+      height: 400px;
+
+      .img-center {
+        align-self: center;
+      }
 
       img {
         height: 100px;
         max-height: 100px;
+        margin: auto 0;
       }
     }
 
@@ -73,11 +79,12 @@ a {
 
 
 .modal-card {
-  background-color: #d9d9d9;
+  background-color: #e6e6e6;
 box-shadow: 1px 4px 15px 5px rgba(0, 0, 0, 0.10);
   border: 1px solid #888;
   margin: 0 auto;
   width: auto;
+  max-width: 500px;
   border-radius: 5px;
   align-self: center;
 }

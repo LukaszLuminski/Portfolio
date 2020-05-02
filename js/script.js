@@ -200,9 +200,9 @@ let modalContent1 = $('.modal-html');
 let modalContent2 = $('.modal-css');
 let modalContent3 = $('.modal-js');
 let modalContent4 = $('.modal-rwd');
-let modalContent5 = $('.modal-node');
+let modalContent5 = $('.modal-nodejs');
 let modalContent6 = $('.modal-mongodb');
-let modalContent7 = $('.modal-wordpress');
+let modalContent7 = $('.modal-wp');
 let modalContent8 = $('.modal-sass');
 let modalContent9 = $('.modal-bootstrap');
 let modalContent10 = $('modal-jquery');
@@ -214,12 +214,29 @@ logo.on('click', (e) => {
   modal.addClass('animated');
   let target = e.currentTarget;
   let result = target.className;
+  console.log(result);
   if (result == 'logo html') {
     modalContent1.css('display', 'flex');
   } else if (result == 'logo css'){
     modalContent2.css('display', 'flex');
   } else if (result == 'logo js'){
     modalContent3.css('display', 'flex');
+  } else if (result == 'logo rwd'){
+    modalContent4.css('display', 'flex');
+  } else if (result == 'logo node'){
+    modalContent5.css('display', 'flex');
+  } else if (result == 'logo mongodb'){
+    modalContent6.css('display', 'flex');
+  } else if (result == 'logo wp'){
+    modalContent7.css('display', 'flex');
+  } else if (result == 'logo sass'){
+    modalContent8.css('display', 'flex');
+  } else if (result == 'logo bootstrap'){
+    modalContent9.css('display', 'flex');
+  } else if (result == 'logo jquery'){
+    modalContent10.css('display', 'flex');
+  } else if (result == 'logo git'){
+    modalContent11.css('display', 'flex');
   }
 });
 
