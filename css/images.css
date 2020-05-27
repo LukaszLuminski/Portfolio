@@ -101,10 +101,6 @@
   .links .code {
     margin: auto 0 auto 1.4rem;
     font-size: 15px; }
-  .links a:active, .links a:hover, .links a:visited {
-    text-decoration: none;
-    color: #FFFFFF;
-    text-shadow: 0 0 10px #FFFFFF; }
 
 figure.hover-effect img {
   max-width: none;

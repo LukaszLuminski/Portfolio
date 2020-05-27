@@ -22,6 +22,18 @@ a {
   color: white;
 }
 
+.links a {
+  text-decoration: none !important;
+  color: #FFFFFF !important;
+  &:active,
+  &:hover,
+  &:visited {
+    text-decoration: none;
+    color: #FFFFFF;
+    text-shadow: 0 0 10px #FFFFFF;
+  }
+}
+
 .resize-animation-stopper * {
   animation: none !important;
   transition: none !important;
