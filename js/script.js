@@ -28,13 +28,11 @@ $hamburger.on("click", () => {
     $('.right a').addClass('animated');
     $hamburger.toggleClass("is-active");
 
-    if ((window.innerWidth < 1291) && (document.documentElement.scrollTop < 50) && ($hamburger.hasClass('is-active'))) {
+    if ((window.innerWidth < 1024) && ($hamburger.hasClass('is-active'))) {
         document.querySelector("header").style.filter = "blur(6px)";
-
         document.querySelector(".nav-bg").style.background = "rgba(0, 0, 0, .6)";
     } else {
         document.querySelector("header").style.filter = "none";
-
         document.querySelector(".nav-bg").style.background = "transparent";
     }
 });

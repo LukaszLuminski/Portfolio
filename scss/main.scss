@@ -529,12 +529,19 @@ a {
     }
 }
 
+.top-bg {
+    z-index: 2;
+    background: black;
+    width: 100vw;
+    height: 100vh;
+}
+
 header {
     background-color: black;
     display: table-cell;
     text-align: center;
     width: 100vw;
-    z-index: 1;
+    z-index: 3;
     position: relative;
     vertical-align: middle;
     color: white;
