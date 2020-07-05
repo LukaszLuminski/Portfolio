@@ -412,7 +412,8 @@ header {
   z-index: 1;
   position: relative;
   vertical-align: middle;
-  color: white; }
+  color: white;
+  transition: .2s; }
 
 @media screen and (orientation: landscape) and (max-height: 400px) {
   header {
