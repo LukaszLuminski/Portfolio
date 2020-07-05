@@ -411,10 +411,6 @@ a {
     }
 }
 
-.topnav .navLink {
-    font-size: 16px;
-}
-
 @media screen and (min-width: 501px) {
     .name {
         font-size: 2.3rem;
@@ -480,6 +476,7 @@ a {
         .navLink {
             padding: 4px 15px 1px;
             margin-top: 5px;
+            font-size: 16px;
         }
         .last {
             padding: 5px 0 15px 15px;
@@ -494,9 +491,10 @@ a {
     .topnav {
         .navLink {
             display: none;
-            padding: 9px 0;
+            padding: 20px 0 7px 0;
             margin-right: 25px;
-            width: 130px;
+            width: 120px;
+            font-size: 20px;
         }
         a.icon {
             float: right;
