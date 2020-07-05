@@ -1,18 +1,16 @@
 /*jshint esversion: 6 */
 
-$(document).ready(() => {
-    $(".scroll-down, .scrollable").on('click', function(event) {
-        event.preventDefault();
-        const full_url = this.href;
-        const parts = full_url.split("#");
-        const trgt = parts[1];
-        const target_offset = $(`#${trgt}`).offset();
-        const target_top = target_offset.top;
-        $('html, body').animate({
-            scrollTop: target_top
-        }, 1000);
-        event.preventDefault();
-    });
+$(".scroll-down, .scrollable").on('click', function(event) {
+    event.preventDefault();
+    const full_url = this.href;
+    const parts = full_url.split("#");
+    const trgt = parts[1];
+    const target_offset = $(`#${trgt}`).offset();
+    const target_top = target_offset.top;
+    $('html, body').animate({
+        scrollTop: target_top
+    }, 1000);
+    event.preventDefault();
 });
 
 $('.right a').on('click', () => {
