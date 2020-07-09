@@ -33,64 +33,63 @@
 </head>
 
 <body>
+    <div class="wrapper">
+        <section class="navigation">
 
-    <div class="top"></div>
+            <div class="topnav" id="myTopnav">
 
-    <div class="navigation">
-
-        <div class="topnav" id="myTopnav">
-
-            <div class="top-logo">
-                <h4 class="name">Lukasz<br><span class="surname">Luminski</span></h4>
-            </div>
+                <div class="top-logo">
+                    <h4 class="name">Lukasz<br><span class="surname">Luminski</span></h4>
+                </div>
 
 
-            <div class="right">
+                <div class="right">
 
-                <a class="navLink fadeInRight scrollable border-bottom first" href="#projects">PROJECTS</a>
-                <a class="navLink fadeInRight scrollable border-bottom" href="#technologies">SKILLS</a>
-                <a class="navLink fadeInRight scrollable border-bottom" href="#aboutme">ABOUT ME</a>
-                <a class="navLink fadeInRight scrollable border-bottom" href="#contact">CONTACT</a>
-                <a class="navLink fadeInRight border-bottom" href="https://github.com/LukaszLuminski"><i class="fab fa-github"></i></a>
-                <a class="navLink fadeInRight last" href="https://www.linkedin.com/in/lukasz-luminski/"><i class="fab fa-linkedin"></i></a>
+                    <a class="navLink fadeInRight scrollable border-bottom first" href="#projects">PROJECTS</a>
+                    <a class="navLink fadeInRight scrollable border-bottom" href="#technologies">SKILLS</a>
+                    <a class="navLink fadeInRight scrollable border-bottom" href="#aboutme">ABOUT ME</a>
+                    <a class="navLink fadeInRight scrollable border-bottom" href="#contact">CONTACT</a>
+                    <a class="navLink fadeInRight border-bottom" href="https://github.com/LukaszLuminski"><i class="fab fa-github"></i></a>
+                    <a class="navLink fadeInRight last" href="https://www.linkedin.com/in/lukasz-luminski/"><i class="fab fa-linkedin"></i></a>
 
-            </div>
+                </div>
 
-            <a href="javascript:void(0);" class="hamburger hamburger--spin-r icon" onclick="myFunction()">
-                <span class="hamburger-box">
+                <a href="javascript:void(0);" class="hamburger hamburger--spin-r icon" onclick="myFunction()">
+                    <span class="hamburger-box">
           <span class="hamburger-inner"></span>
-                </span>
-            </a>
-        </div>
+                    </span>
+                </a>
+            </div>
 
+        </section>
+
+        <header>
+
+            <div class="profile">
+
+                <div class="description">
+                    <h1>Lukasz Luminski</h1>
+                    <h2>Front-End Web Developer</h2>
+                </div>
+            </div>
+
+            <a class="scroll-down" href="#projects">
+
+                <div class="arrows">
+
+                    <div class="arrow arrow-first"></div>
+                    <div class="arrow arrow-second"></div>
+
+                </div>
+            </a>
+
+            <div class="bg img-fluid">
+            </div>
+        </header>
     </div>
 
-    <header>
-
-        <div class="profile">
-
-            <div class="description">
-                <h1>Lukasz Luminski</h1>
-                <h2>Front-End Web Developer</h2>
-            </div>
-        </div>
-
-        <a class="scroll-down" href="#projects">
-
-            <div class="arrows">
-
-                <div class="arrow arrow-first"></div>
-                <div class="arrow arrow-second"></div>
-
-            </div>
-        </a>
-
-        <div class="bg img-fluid">
-        </div>
-    </header>
-
     <div id="projects" class="anchor"></div>
-    <div class="projects">
+    <section class="projects">
 
         <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
             <h2>My recent projects</h2>
@@ -191,10 +190,10 @@
 
         </div>
 
-    </div>
+    </section>
 
-    <div class="technologies">
-        <div id="technologies" class="anchor2"></div>
+    <section class="technologies">
+        <sectio id="technologies" class="anchor2"></sectio>
         <div class="stack">
             <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" data-aos-anchor=".technologies">
                 <h2 class="tools">My skills</h2>
@@ -255,11 +254,11 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
 
     <div id="aboutme" class="anchor"></div>
-    <div class="aboutme">
+    <section class="aboutme">
 
         <div class="bio">
             <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
@@ -280,10 +279,10 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <div id="contact" class="anchor3"></div>
-    <div class="contact">
+    <section class="contact">
         <h2>Contact</h2>
         <div id="send_form_status"></div>
         <form action="https://formspree.io/mayezekb" method="POST" id="contact_form">
@@ -302,7 +301,7 @@
                 <div><button type="submit" id="sendBtn">Submit</button></div>
             </div>
         </form>
-    </div>
+    </section>
 
     <div class="footer">
         <p>© <span class="copyright"></span> Lukasz Luminski</p>

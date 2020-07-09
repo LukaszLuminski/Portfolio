@@ -9,7 +9,11 @@ body {
   -ms-user-select: none;
   user-select: none;
   -o-user-select: none;
-  background-color: #f2f2f2; }
+  background-color: #f2f2f2;
+  z-index: -5; }
+
+.wrapper {
+  background-color: #404c52; }
 
 *,
 *:after,
