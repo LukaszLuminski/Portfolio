@@ -259,6 +259,13 @@ a {
   .logo {
     margin-bottom: 50px; } }
 
+    @media screen and (max-width: 900px) and (min-width: 680px) {
+      .node {
+        margin-left: 1.7%;
+        margin-right: -1%;
+      } }
+
+
 @media screen and (max-width: 900px) {
   .technologies {
     -webkit-clip-path: polygon(0 5%, 100% 0, 100% 100%, 0% 96%);
